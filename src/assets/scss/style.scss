@@ -1,5 +1,15 @@
 @import "mixins";
 @import "var";
+@import "./blocks/bonuses.scss";
+@import "./blocks/header.scss";
+@import "./blocks/level.scss";
+@import "./blocks/progress.scss";
+@import "./blocks/sideline.scss";
+@import "./blocks/stats.scss";
+@import "./blocks/range.scss";
+@import "./blocks/main.scss";
+@import "./blocks/playground.scss";
+@import "./blocks/points.scss";
 
 @font-face {
     font-family: Marvin;
@@ -11,11 +21,20 @@
      margin: 0; padding: 0; box-sizing: border-box; 
 }
 body { 
-    text-align: center;
+
     font-family: Marvin, sans-serif;
 }
 
 .background {
-    background-color: #20549a;
-    color: 'white';
+    background: #0c356d;
+    color: #ffffff;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    max-width: 1050px;
+    margin: 0 auto;
 }

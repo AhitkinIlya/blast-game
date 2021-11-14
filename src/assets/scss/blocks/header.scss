@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__progress {
+    max-width: 430px;
+    width: 100%;
+    margin-left: 45px;
+}
+
+.header__level {
+    max-width: 250px;
+    margin-right: 50px;
+}

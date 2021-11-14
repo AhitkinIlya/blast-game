@@ -1,0 +1,14 @@
+.level {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.level__title {
+    font-size: 30px;
+}
+
+.level__value {
+    @include label();
+    margin-top: 5px;
+}

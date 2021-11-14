@@ -1,0 +1,10 @@
+.range {
+    height: 100%;
+}
+
+.range__value {
+    width: 50%;
+    height: 100%;
+    background: $greenGradient;
+    border-radius: 20px;
+}

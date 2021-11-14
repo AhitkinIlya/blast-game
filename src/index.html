@@ -16,7 +16,9 @@
                         <div class="progress">
                             <div class="progress__title">Progress</div>
                             <div class="progress__range">
-                                <div class="range"></div>
+                                <div class="range">
+                                    <div class="range__value"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -30,39 +32,44 @@
             </header>
             <main>
                 <div class="main">
-                    <div class="main__playgroud">
+                    <div class="main__playground">
                         <div class="playground">
-                            <canvas id="game-playground" width="400" height="450">
+                            <canvas id="game-playground" width="500" height="550">
                         </div>
                     </div>
                     <div class="main__sideline">
                         <div class="sideline">
                             <div class="sideline__stats">
                                 <div class="stats">
-                                    <div class="stats__step"></div>
+                                    <div class="stats__step">30</div>
                                     <div class="stats__points">
-                                        <span class="poitns__title">goal:</span>
-                                        <span class="points__value points__value--goal">200</span>
+                                        <div class="points">
+                                            <span class="points__title">goal:</span>
+                                            <span class="points__value points__value--goal">200</span>
+                                        </div>
                                     </div>
                                     <div class="stats__points">
-                                        <span class="poitns__title">score:</span>
-                                        <span class="points__value">130</span>
+                                        <div class="points">
+                                            <span class="points__title">score:</span>
+                                            <span class="points__value">130</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="sideline__bonuses">
+                                <span class="bonuses__title">Bonuses</span>
                                 <div class="bonuses">
                                     <div class="bonuses__item" data-bonus="bomb">
                                         <div class="bonuses__icon"></div>
-                                        <div class="bonnuses__count">1</div>
+                                        <div class="bonuses__count">1</div>
                                     </div>
                                     <div class="bonuses__item" data-bonus="mixing">
                                         <div class="bonuses__icon"></div>
-                                        <div class="bonnuses__count">2</div>
+                                        <div class="bonuses__count">2</div>
                                     </div>
                                     <div class="bonuses__item" data-bonus="teleport">
                                         <div class="bonuses__icon"></div>
-                                        <div class="bonnuses__count">2</div>
+                                        <div class="bonuses__count">2</div>
                                     </div>
                                 </div>
                             </div>

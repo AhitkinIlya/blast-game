@@ -1,0 +1,22 @@
+.points {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 75px;
+    background-color: $darkBlueColor;
+    border-radius: 15px;
+    margin-bottom: 14px;
+}
+
+.points__title {
+    font-size: 23px;
+}
+
+.points__value {
+    font-size: 20px;
+}
+
+.points__value--goal {
+    color: #db57f7;
+}

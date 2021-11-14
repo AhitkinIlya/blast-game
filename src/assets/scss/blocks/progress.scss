@@ -1,0 +1,18 @@
+.progress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progress__title {
+    font-size: 30px;
+}
+
+.progress__range {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    background: $blueGradient;
+    border: 1px solid #3186f9;
+    margin-top: 5px;
+}
