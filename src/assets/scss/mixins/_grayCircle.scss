@@ -1,0 +1,10 @@
+@mixin grayCircle($size) {
+    display: inline-block;
+    width: $size;
+    height: $size;
+
+    vertical-align: middle;
+
+    border-radius: 50%;
+    background-color: $greyColor;
+}

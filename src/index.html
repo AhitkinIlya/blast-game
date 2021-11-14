@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <title>Test task for TapClap</title>
+</head>
+<body>
+    <div class="background">
+        <div class="game">
+            <header>
+                <div class="header">
+                    <div class="header__progress">
+                        <div class="progress">
+                            <div class="progress__title">Progress</div>
+                            <div class="progress__range">
+                                <div class="range"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__level">
+                        <div class="level">
+                            <div class="level__title">Level</div>
+                            <div class="level__value">3</div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="main">
+                    <div class="main__playgroud">
+                        <div class="playground">
+                            <canvas id="game-playground" width="400" height="450">
+                        </div>
+                    </div>
+                    <div class="main__sideline">
+                        <div class="sideline">
+                            <div class="sideline__stats">
+                                <div class="stats">
+                                    <div class="stats__step"></div>
+                                    <div class="stats__points">
+                                        <span class="poitns__title">goal:</span>
+                                        <span class="points__value points__value--goal">200</span>
+                                    </div>
+                                    <div class="stats__points">
+                                        <span class="poitns__title">score:</span>
+                                        <span class="points__value">130</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sideline__bonuses">
+                                <div class="bonuses">
+                                    <div class="bonuses__item" data-bonus="bomb">
+                                        <div class="bonuses__icon"></div>
+                                        <div class="bonnuses__count">1</div>
+                                    </div>
+                                    <div class="bonuses__item" data-bonus="mixing">
+                                        <div class="bonuses__icon"></div>
+                                        <div class="bonnuses__count">2</div>
+                                    </div>
+                                    <div class="bonuses__item" data-bonus="teleport">
+                                        <div class="bonuses__icon"></div>
+                                        <div class="bonnuses__count">2</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

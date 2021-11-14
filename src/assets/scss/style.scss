@@ -1,0 +1,21 @@
+@import "mixins";
+@import "var";
+
+@font-face {
+    font-family: Marvin;
+    src: url(../fonts/marvin-webfont.woff),
+    url(../fonts/marvin-webfont.woff2)
+}
+
+* {
+     margin: 0; padding: 0; box-sizing: border-box; 
+}
+body { 
+    text-align: center;
+    font-family: Marvin, sans-serif;
+}
+
+.background {
+    background-color: #20549a;
+    color: 'white';
+}

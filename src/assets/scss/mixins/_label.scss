@@ -1,0 +1,21 @@
+@mixin label() {
+    display: inline-flex;
+    height: $labelSize;
+    align-items: center;
+    position: relative;
+    border-radius: $labelSize / 2;
+    padding: 0 30px 0 50px;
+    font-size: 16px;
+    background: 
+        url(../images/glow.png) right top no-repeat, 
+        $violetGradient;
+    color: white;
+
+    &:before {
+        @include grayCircle($labelSize);
+
+        content: '';
+        position: absolute;
+        left: -5px;
+    }
+}
