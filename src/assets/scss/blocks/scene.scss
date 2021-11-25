@@ -1,0 +1,24 @@
+.scene {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    top: 0px;
+    background-color: #20549a;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 0 40px;
+}
+
+.scene__title {
+    font-size: 45px;
+}
+
+.scene__buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}

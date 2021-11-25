@@ -17,7 +17,7 @@
                             <div class="progress__title">Progress</div>
                             <div class="progress__range">
                                 <div class="range">
-                                    <div class="range__value"></div>
+                                    <div id="progress" class="range__value"></div>
                                 </div>
                             </div>
                         </div>
@@ -25,7 +25,7 @@
                     <div class="header__level">
                         <div class="level">
                             <div class="level__title">Level</div>
-                            <div class="level__value">3</div>
+                            <div id="level" class="level__value">3</div>
                         </div>
                     </div>
                 </div>
@@ -36,22 +36,29 @@
                         <div class="playground">
                             <canvas id="game-playground" width="500" height="550">
                         </div>
+                        <div class="scene" id="scene">
+                            <span class="scene__title" id="sceneTitle">level passed</span>
+                            <div class="scene__buttons">
+                                <button class="button__action" id="nextLevel">next level</button>
+                                <button class="button__action" id="replay">replay</button>
+                            </div>
+                        </div>
                     </div>
                     <div class="main__sideline">
                         <div class="sideline">
                             <div class="sideline__stats">
                                 <div class="stats">
-                                    <div class="stats__step">30</div>
+                                    <div id="steps" class="stats__step">30</div>
                                     <div class="stats__points">
                                         <div class="points">
                                             <span class="points__title">goal:</span>
-                                            <span class="points__value points__value--goal">200</span>
+                                            <span id="target-scores" class="points__value points__value--goal">200</span>
                                         </div>
                                     </div>
                                     <div class="stats__points">
                                         <div class="points">
                                             <span class="points__title">score:</span>
-                                            <span class="points__value">130</span>
+                                            <span id="scores" class="points__value">130</span>
                                         </div>
                                     </div>
                                 </div>
@@ -59,17 +66,13 @@
                             <div class="sideline__bonuses">
                                 <span class="bonuses__title">Bonuses</span>
                                 <div class="bonuses">
-                                    <div class="bonuses__item" data-bonus="bomb">
+                                    <div class="bonuses__item" id="mixing" data-bonus="mixing">
                                         <div class="bonuses__icon"></div>
-                                        <div class="bonuses__count">1</div>
+                                        <div class="bonuses__count" id="mixing__count"></div>
                                     </div>
-                                    <div class="bonuses__item" data-bonus="mixing">
+                                    <div class="bonuses__item" id="teleport" data-bonus="teleport">
                                         <div class="bonuses__icon"></div>
-                                        <div class="bonuses__count">2</div>
-                                    </div>
-                                    <div class="bonuses__item" data-bonus="teleport">
-                                        <div class="bonuses__icon"></div>
-                                        <div class="bonuses__count">2</div>
+                                        <div class="bonuses__count" id="teleport__count"></div>
                                     </div>
                                 </div>
                             </div>
@@ -79,5 +82,6 @@
             </main>
         </div>
     </div>
+    <script src="./assets/js/app.js"></script>
 </body>
 </html>

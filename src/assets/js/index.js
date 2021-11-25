@@ -1,3 +1,14 @@
-function opa() {
-    console.log('opa')
-};
+import game from './game.js'
+
+game.initialization()
+
+
+
+
+
+
+
+
+
+
+
