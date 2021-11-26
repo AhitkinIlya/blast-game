@@ -68,14 +68,23 @@ import progress from './progress'
 
     setEvent() {
         this.mixingItem.addEventListener('click', (e) => {
-            this.mixingBonus -= 1
-            this.mixingCount.innerHTML = this.mixingBonus
-            field.mixField()
+            if(this.mixingBonus > 0) {
+                this.mixingBonus -= 1
+                this.mixingCount.innerHTML = this.mixingBonus
+                field.mixField()
+            } else return
         })
         this.teleportItem.addEventListener('click', (e) => {
-            field.active = false
-            this.teleportActive = true
+            field.active = !field.active
+            this.teleportActive = !this.teleportActive
+            this.setTeleportShadow()
         })
+    }
+
+    setTeleportShadow() {
+        if (this.teleportActive && this.teleportBonus > 0) {
+            this.teleportItem.style.boxShadow = '0px 0px 3px 3px #e73feb'
+        } else this.teleportItem.style.boxShadow = 'none'
     }
 
     delete(count) {

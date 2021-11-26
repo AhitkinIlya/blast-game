@@ -47,7 +47,7 @@ class TileViewer {
         if (this.t) {
             this.drawTile(tile, coords, size)
         } else {
-            setTimeout(() => this.drawTile(tile, coords, size), 50)
+            setTimeout(() => this.drawTile(tile, coords, size), 200)
         }
     }
 

@@ -38,9 +38,7 @@ class Field {
         }
         if (this.checkPosition()) {
             canvas.draw(this.mapField, () => this.active = true)
-        }
-            
-        else this.mix()
+        } else this.mixField()
         
     }
 
@@ -180,6 +178,7 @@ class Field {
         this.mapField[teleportTileTwo.position.y][teleportTileTwo.position.x].color = colorOne
         canvas.drawTeleport(this.teleportTiles)
         game.teleportActive = false
+        game.setTeleportShadow()
         game.teleportBonus--
         game.setValues()
         this.teleportTiles = []
