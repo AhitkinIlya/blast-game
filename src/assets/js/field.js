@@ -174,15 +174,22 @@ class Field {
         let teleportTileTwo = this.teleportTiles[1]
         let colorOne = teleportTileOne.color
         let colorTwo = teleportTileTwo.color
-        this.mapField[teleportTileOne.position.y][teleportTileOne.position.x].color = colorTwo
-        this.mapField[teleportTileTwo.position.y][teleportTileTwo.position.x].color = colorOne
-        canvas.drawTeleport(this.teleportTiles)
-        game.teleportActive = false
-        game.setTeleportShadow()
-        game.teleportBonus--
-        game.setValues()
-        this.teleportTiles = []
-        this.active = true
+        if (colorOne !== colorTwo) {
+            this.mapField[teleportTileOne.position.y][teleportTileOne.position.x].color = colorTwo
+            this.mapField[teleportTileTwo.position.y][teleportTileTwo.position.x].color = colorOne
+            canvas.drawTeleport(this.teleportTiles)
+            game.teleportActive = false
+            game.setTeleportShadow()
+            game.teleportBonus--
+            game.setValues()
+            this.teleportTiles = []
+            this.active = true
+        } else {
+            game.teleportActive = false
+            game.setTeleportShadow()
+            this.teleportTiles = []
+            this.active = true
+        }
     }
 
     click(position) {
