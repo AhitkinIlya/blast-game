@@ -46,3 +46,5 @@ Test task for TapClap company
 Атомарные коммиты в репозитории
 Использование ES6 + Babel
 Сборка проекта gulp / webpack
+
+Ссылка на рабочий проект https://ahitkinilya.github.io/blast-game/dist/
